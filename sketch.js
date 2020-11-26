@@ -17,7 +17,13 @@ function draw() {
   movingrectanglething.y = World.mouseY;
   console.log(fixedrectanglething.width/2 + movingrectanglething.width/2);
   console.log(movingrectanglething.x - fixedrectanglething.x);
-
+if(movingrectanglething.x -fixedrectanglething.x == fixedrectanglething.width/2 + movingrectanglething.width/2){
+   movingrectanglething.shapeColor = "red";
+   fixedrectanglething.shapeColor = "red";
+}else{
+  movingrectanglething.shapeColor = "green";
+  fixedrectanglething.shapeColor = "green";
+}
   drawSprites();
 
 }
