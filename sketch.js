@@ -15,7 +15,9 @@ function draw() {
   
   movingrectanglething.x = World.mouseX;
   movingrectanglething.y = World.mouseY;
-  
+  console.log(fixedrectanglething.width/2 + movingrectanglething.width/2);
+  console.log(movingrectanglething.x - fixedrectanglething.x);
+
   drawSprites();
 
 }
